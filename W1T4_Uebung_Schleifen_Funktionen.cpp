@@ -28,8 +28,6 @@ Tipp: sinnvollerweise wird die Funktion aus Teilaufgabe 1) verwendet.
 bool is_prime (unsigned int a);
 unsigned int next_prime (unsigned int a);
 
-
-
 int main()
 {
     setlocale(LC_ALL, "de_DE.utf-8");
