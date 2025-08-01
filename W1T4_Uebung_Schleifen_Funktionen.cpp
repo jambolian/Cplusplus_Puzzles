@@ -2,6 +2,7 @@
 
 using namespace std;
 
+typedef unsigned long long ul64;
 
 /*
 1)
@@ -25,16 +26,16 @@ Tipp: sinnvollerweise wird die Funktion aus Teilaufgabe 1) verwendet.
 */
 
 
-bool is_prime (unsigned int a);
-unsigned int next_prime (unsigned int a);
+bool is_prime (ul64 a);
+ul64 next_prime (ul64 a);
 
 int main()
 {
     setlocale(LC_ALL, "de_DE.utf-8");
     cout.setf(ios::boolalpha);
 
-    unsigned int a = 23;
-    unsigned int b = next_prime(a);
+    ul64 a = 23;
+    ul64 b = next_prime(a);
 
     cout << "The prime number after " << a << " is: " << b << endl;
 
@@ -49,9 +50,9 @@ int main()
 // --------------------------------------------------------------------------------
 // Functions
 // --------------------------------------------------------------------------------
-bool is_prime (unsigned int a)
+bool is_prime (ul64 a)
 {
-    unsigned int d = 2;
+    ul64 d = 2;
     bool primeCheck = true;
 
     if (a < 2)
@@ -74,9 +75,9 @@ bool is_prime (unsigned int a)
 
 // --------------------------------------------------------------------------------
 
-unsigned int next_prime (unsigned int a)
+ul64 next_prime (ul64 a)
 {
-    unsigned int nextPrime;
+    ul64 nextPrime;
 
     a++;
     while (!is_prime(a))

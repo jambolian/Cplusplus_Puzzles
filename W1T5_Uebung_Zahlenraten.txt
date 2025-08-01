@@ -1,0 +1,3 @@
+Es ist ein Programm zu schreiben, das eine Zufallszahl zwischen 1 und 100 ermittelt. 
+Diese Zahl ist durch den Spieler durch geschicktes Raten herauszubekommen. Der Rechner 
+antwortet nach jeder Eingabe nur mit "grösser", "kleiner" oder "richtig in x Versuchen".
